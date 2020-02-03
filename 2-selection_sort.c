@@ -13,6 +13,10 @@ void selection_sort(int *array, size_t size)
 	size_t i = 0, j, minor;
 	int temporal;
 
+	if (size < 2)
+	{
+		return;
+	}
 	while (i < size)
 	{
 		minor = i;
