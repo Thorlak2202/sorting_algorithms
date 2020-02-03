@@ -1,9 +1,9 @@
 #include "sort.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * bubble_sort - function that sorts using bubble algo.
+ * @array: entry data
+ * @size: is the size of the array
  */
 
 void bubble_sort(int *array, size_t size)
@@ -11,7 +11,7 @@ void bubble_sort(int *array, size_t size)
 	size_t i, j;
 	int temporal;
 
-	for (i = 0; i < size-1; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 		for (j = 0; j < size - i - 1; j++)
 		{
@@ -23,5 +23,5 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-	}  
+	}
 }
